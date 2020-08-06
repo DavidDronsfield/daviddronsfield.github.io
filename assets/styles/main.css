@@ -1,0 +1,145 @@
+.padding-0 { padding: 0 }
+.padding-1 { padding: 1rem }
+.padding-2 { padding: 2rem }
+.padding-3 { padding: 3rem }
+
+.padding-top-0 { padding-top: 0 }
+.padding-top-1 { padding-top: 1rem }
+.padding-top-2 { padding-top: 2rem }
+.padding-top-3 { padding-top: 3rem }
+
+.padding-bottom-0 { padding-bottom: 0 }
+.padding-bottom-1 { padding-bottom: 1rem }
+.padding-bottom-2 { padding-bottom: 2rem }
+.padding-bottom-3 { padding-bottom: 3rem }
+
+.margin-0 { margin: 0 }
+.margin-1 { margin: 1rem }
+.margin-2 { margin: 2rem }
+.margin-3 { margin: 3rem }
+
+.margin-top-0 { margin-top: 0 }
+.margin-top-1 { margin-top: 1rem }
+.margin-top-2 { margin-top: 2rem }
+.margin-top-3 { margin-top: 3rem }
+
+.margin-bottom-0 { margin-bottom: 0 }
+.margin-bottom-1 { margin-bottom: 1rem }
+.margin-bottom-2 { margin-bottom: 2rem }
+.margin-bottom-3 { margin-bottom: 3rem }
+
+.primary {
+  color: #f3901d;
+}
+
+.secondary {
+  color: #00447c;
+}
+
+
+
+
+.header {
+  position: relative;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/ipswich-christian-evangelical-church.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  height: 40vh;
+  max-height: 600px;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+.header__title {
+  width: 100%;
+  max-width: 700px;
+  z-index: 20;
+}
+
+.map {
+  width: 100%;
+  height: 50vh;
+}
+
+.gallery {
+  margin: -10px;
+}
+
+.gallery__item {
+  padding: 10px;
+  width: 100%;
+}
+
+.gallery__photo {
+  width: 100%;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #00447c;
+  padding: 3rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+}
+
+.footer__item a {
+  color: #ffffff;
+}
+
+.footer__icon {
+  width: 25px;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 650px) {
+  .header {
+    background-position-y: center;
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 678px) {
+  .margin-top-medium-0 { margin-top: 0 }
+  .margin-top-medium-1 { margin-top: 1rem }
+  .margin-top-medium-2 { margin-top: 2rem }
+  .margin-top-medium-3 { margin-top: 3rem }
+
+  .margin-bottom-medium-0 { margin-bottom: 0 }
+  .margin-bottom-medium-1 { margin-bottom: 1rem }
+  .margin-bottom-medium-2 { margin-bottom: 2rem }
+  .margin-bottom-medium-3 { margin-bottom: 3rem }
+
+  .map {
+    height: 400px;
+  }
+}
+
+
+
+
+@media screen and (min-width: 900px) {
+  .header {
+    height: 70vh;
+  }
+}
