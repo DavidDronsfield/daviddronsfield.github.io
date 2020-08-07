@@ -41,11 +41,11 @@
 
 .header {
   position: relative;
-  color: #ffffff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/ipswich-christian-evangelical-church.jpg');
+  background-image: url('../images/ipswich-christian-fellowship-evangelical-church.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -65,15 +65,55 @@
   opacity: 0.7;
 }
 
+.header__bar {
+  display: none;
+  color: #ffffff;
+  background-color: #00447c;
+  padding: 1rem 0;
+}
+
+.header__bar-content {
+  display: flex;
+  align-items: row;
+  justify-content: space-between;
+}
+
+.header__bar-content p {
+  margin-bottom: 0;
+  text-align: right;
+}
+
 .header__title {
   width: 100%;
   max-width: 700px;
   z-index: 20;
 }
 
+.header__link {
+  display: flex;
+  align-items: center;
+  z-index: 20;
+  margin-top: 1rem;
+  color: #00447c;
+  font-weight: 500;
+}
+
+.header__link:hover,
+.header__link:visited,
+.header__link:active,
+.header__link:focus {
+  color: #00447c;
+}
+
+.header__icon {
+  width: 25px;
+  margin-right: 10px;
+}
+
 .map {
   width: 100%;
   height: 50vh;
+  display: block;
 }
 
 .gallery {
@@ -90,21 +130,62 @@
 }
 
 .footer {
-  color: #ffffff;
-  background-color: #00447c;
-  padding: 3rem 1rem;
   text-align: center;
-  display: flex;
-  justify-content: center;
 }
 
-.footer__item {
+.footer__address-section-container {
+  color: #ffffff;
+  background-color: #00447c;
+  padding: 3rem 0;
+}
+
+.footer__address-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__services {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.footer__services li p {
+  margin-bottom: 0;
+}
+
+.footer__links-section-container {
+  color: #00447c; 
+  padding: 3rem 0;
+}
+
+.footer__links-section-container a {
+  color: #00447c;
+}
+
+.footer__links-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+.footer__copyright {
+  margin-bottom: 1rem;
+}
+
+.footer__link {
   display: flex;
   align-items: center;
 }
 
-.footer__item a {
-  color: #ffffff;
+.footer__link:hover,
+.footer__link:visited,
+.footer__link:active,
+.footer__link:focus {
+  color: #00447c;
 }
 
 .footer__icon {
@@ -130,16 +211,57 @@
   .margin-bottom-medium-2 { margin-bottom: 2rem }
   .margin-bottom-medium-3 { margin-bottom: 3rem }
 
+  .header__link {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .header__icon {
+    width: 30px;
+  }
+
   .map {
     height: 400px;
   }
+
+  .footer__links-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer__copyright {
+    margin-bottom: 0;
+  }
 }
-
-
-
 
 @media screen and (min-width: 900px) {
   .header {
     height: 70vh;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .header {
+    height: 70vh;
+  }
+
+  .header__bar {
+    display: block;
+  }
+
+  .footer__address-section {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__services {
+    text-align: right;
+    margin-left: 4rem;
+    font-size: inherit;
+  }
+
+  .footer__links-section {
+    font-size: inherit;
+    justify-content: space-between;
   }
 }
