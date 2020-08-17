@@ -48,6 +48,16 @@
   color: #f3901d;
 }
 
+.h3 {
+  font-size: 1.1875rem;
+}
+
+@media screen and (min-width: 40em) {
+  .h3 {
+    font-size: 1.9375rem;
+  }
+}
+
 
 
 .header {
