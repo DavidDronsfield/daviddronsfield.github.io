@@ -1,5 +1,7 @@
 {
  "name": "Ipswich Christian Fellowship",
+ "display": "standalone",
+ "start_url": "https://spiritualsongs.com",
  "icons": [
   {
    "src": "\/assets\/android-icon-36x36.png",
